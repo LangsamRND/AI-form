@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insta Mood Quote Studio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-shell">
+        <header>
+            <p class="tag">#Daily_Inspo #영어한스푼</p>
+            <h1>오늘의 명언 제조기</h1>
+            <p class="subtitle">버튼을 눌러 마음을 환기시키고, 영어 감각도 채워보세요.</p>
+        </header>
+        <main>
+            <section class="quote-card quote-card--active" aria-live="polite">
+                <div class="quote-meta">
+                    <span class="quote-theme" id="quoteTheme">Motivation</span>
+                    <span class="quote-count"><span id="quoteIndex">01</span> / <span id="quoteTotal">00</span></span>
+                </div>
+                <blockquote>
+                    <p class="quote-text" id="quoteText">버튼을 눌러 오늘의 메시지를 받아보세요 ✨</p>
+                    <footer>
+                        <cite class="quote-author" id="quoteAuthor"></cite>
+                    </footer>
+                </blockquote>
+                <p class="quote-translation" id="quoteTranslation"></p>
+            </section>
+            <button type="button" class="generate-button" id="generateButton">오늘의 명언 만들기</button>
+        </main>
+        <footer>
+            <p>마음에 드는 문장을 스크린샷으로 남겨 인스타 무드보드에 더해보세요.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
